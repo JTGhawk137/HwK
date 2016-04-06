@@ -23,7 +23,7 @@ public class Tokenizer
 
         for (String str : new String[]{"-", "\\(", "//)", "\\.", "\\,"})
         {
-            tokenData.add(new TokenData(Pattern.compile("^(" + str + ")"), TokenType.TOKEN));
+            tokenData.add(new TokenData(Pattern.compile("^( + str + )"), TokenType.TOKEN));
         }
     }
 
