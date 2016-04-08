@@ -26,6 +26,10 @@ public class VariableParser extends Parser<Block>
         {
             return null;
         }
+        if (type == Type.VOID)
+        {
+            throw new IllegalStateException("Variables cannot be the type void");
+        }
         Token value = tokenizer.nextToken();
         Object val;
         if (value.getType() == TokenType.INTEGER)

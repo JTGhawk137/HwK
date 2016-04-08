@@ -26,6 +26,11 @@ public abstract class Block
         return superBlock;
     }
 
+    public ArrayList<Block> getSubBlocks()
+    {
+        return subBlocks;
+    }
+
     public void addBlock(Block block)
     {
         subBlocks.add(block);
