@@ -1,0 +1,5 @@
+class: Print
+
+    @Static
+    pub func main() void:
+        print("Hello World")
